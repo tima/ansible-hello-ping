@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+    hello_message: "Hello world"
+  tasks:
+    - name: say something
+      ping:
+        data: "{{ hello_message }}"
